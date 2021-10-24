@@ -14,23 +14,23 @@ I was asked to:
 # Results:
 
 ## Data Preprocessing
-- What variable(s) are considered the target(s) for your model?
-    IS_SUCCESSFUL column is the target or output of the model.
+- What variable(s) are considered the target(s) for your model? <br />
+IS_SUCCESSFUL column is the target or output of the model.
 
-- What variable(s) are considered to be the features for your model?
+- What variable(s) are considered to be the features for your model? <br />
     All the other columns in the dataframe besides the "IS_SUCCESSFUL" column are the features. 
 
-- What variable(s) are neither targets nor features, and should be removed from the input data?
+- What variable(s) are neither targets nor features, and should be removed from the input data? <br />
     I removed the EIN & NAME columns as they have no effect of the target results
 
 ## Compiling, Training, and Evaluating the Model
-- How many neurons, layers, and activation functions did you select for your neural network model, and why?
+- How many neurons, layers, and activation functions did you select for your neural network model, and why? <br />
     I used three hidden layers. On the first layer I used 120 neurons, the second used 80, and the 3rd layer used 40. There were 40 features, and it's standard to use 2 or 3 times the number of neurons as there are features. In the end, I tried the Swish activation layer, because the folks at Google invented it and I wanted to see if it would perform better than the relu function I began with.
 
-- Were you able to achieve the target model performance?
+- Were you able to achieve the target model performance?<br />
     I was not able to achieve the target model performance.
 
-- What steps did you take to try and increase model performance?
+- What steps did you take to try and increase model performance?<br />
     1. First I tried to remove noisy features by increasing the number of features I bucketed together. I also      removed outliers in the ASK_AMT column. 
     2. I added additional neurons and additional layers
     3. I changed the activation funtion from relu to swish
